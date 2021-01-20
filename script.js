@@ -10,10 +10,10 @@ sideNav.style.right = "-150px";
 menuBtn.onclick = function () {
     if(sideNav.style.right === "-150px"){
         sideNav.style.right = "0";
-        menu.src = "image/close.png";
+        menu.src = "close.png";
     }
     else{
         sideNav.style.right = "-150px";
-        menu.src = "image/menu.png";
+        menu.src = "menu.png";
     }
 }
