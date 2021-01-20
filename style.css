@@ -11,23 +11,21 @@
     height: 100vh;
 }
 
-
 .profile-text{
     text-align:center;
     color: #ffffff;
-    padding-top: 15rem;
+    padding-top: 20rem;
 }
 
 .profile-text h1{
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Kaushan Script', cursive;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 .profile-text p {
-    font-size: 15px;
+    font-size: 20px;
     font-style: italic;
-   
-    
+
 }
 .others{
     font-family:'Playfair Display',
@@ -42,7 +40,7 @@
     display: inline-block;
     margin:0 10px;
     padding: 12px 0;
-    border:0.5px solid #fff;
+    border: 0.5px solid #fff;
     color: #fff;
     position: relative;
     z-index: 1;
@@ -108,7 +106,10 @@ nav ul li a{
 
 @media screen and (max-width: 770px){
         .profile-text h1 {
-            font-size: 20px;}
+            font-size: 25px;}
+        .profile-text p {
+            font-size: 15px;
+            }
         .profile-btn a{
             display: block;
             margin: 20px auto;
@@ -183,11 +184,13 @@ nav ul li a{
 }
 .aboutMe h4{
     text-align: left;
-    margin-bottom: 60px;
-    font-weight: 800;
+    margin-bottom: 30px;
+    font-weight: bolder;
     color:#000000;
-    font-family:'Playfair Display',
-    serif;
+    font-size: 15px;
+    font-family: 'Poppins',
+    sans-serif;
+    justify-content:space-evenly
 }
 .about-description{
     display:flex;
@@ -278,7 +281,7 @@ nav ul li a{
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-.summary {
+.summary, .skills, .experience, .edu, .download {
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 2%;
@@ -286,35 +289,15 @@ nav ul li a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.skills {
-    padding-left: 10%;
-    padding-right:10%;
-    padding-bottom: 2%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.experience {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 2%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.edu{
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 2%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.download {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 2%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.download a{
     text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000000;
 }
-.download {
-    text-decoration: none;
+.download a:hover{
+    color: #000000;
+    background-color: #fff;
 }
 
 .flex-container {
@@ -329,19 +312,51 @@ nav ul li a{
     text-align: center;
 }
 /* End of Resume */
-#footer{
-    font-size: 40px;
-    font-family: 'Times New Roman';
-    background-color: rgb(80, 86, 87);
 
+/*footer*/
+#footer{
+    padding:50px 0 20px;
+    font-size: 40px;
+    background-color: rgb(207, 220, 224);
 }
-.footer-img{
-    max-width:370px;
-    opacity:0.1;
-    position: absolute;
-    left: 50%;
-    top: 35%;
-    transform: translate(-50%, -50%);
+#footer p{
+    color: #000a06;
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;   
+}
+.footer-row h1{
+    line-height: 35px;
+}
+.footer-row p {
+    margin: 10px 0;
+}
+.footer-left,
+.footer-right {
+    flex-basis: 45%;
+    padding:10px;
+    font-size: 12px;
+    font-family: bold;
+    margin-bottom: 20px;
+    
+}
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-left .fa,
+.footer-right .fa {
+    font-size: 20px;
+    color: #009688;
+    margin: 10px;
 }
 .social-links{
     text-align:center;
@@ -349,38 +364,24 @@ nav ul li a{
 
 .social-links .fa{
     height: 40px;
-    widows: 40px;
+    width: 40px;
     font-size:20px;
     line-height:40px;
     border:1px solid #009688;
-    margin: 40px 5px 0;
+    margin: 40px 10px 0;
     color:#009688;
     cursor:pointer;
+    transition: 0.5s;
 }
 
-.social-links .fa hover{
+.social-links .fa:hover{
     background: #009688;
     color: #fff;
     transform: translateY(-7px);
 }
-.footer-left{
-    text-align: left;
-    padding-left: 5%;
-    margin-left: 5%;
-    font-size: 15px;
-}
-
-.footer-right{
-    padding-right: 5%;
-    text-align: right;
-    margin-right: 5%;
-    font-size: 15px;
-    display: block;
-}
-.linkedin{
-    text-decoration: none;
-    color: #000000;
-    font-size: 15px;
+.social-links p{
+    font-size: 12px;
+    margin-top: 20px;
 }
 
 .footer-right i{
@@ -388,7 +389,7 @@ nav ul li a{
 }
 
 @media screen and (max-width: 770px) {
-.title-text p1 {
+.title-text p {
     font-size: 25px;}
 
 .aboutMe {
@@ -404,14 +405,28 @@ nav ul li a{
     margin: auto;
     align-items: center;
     text-align: center;
-    font-size: 17px;
+    font-size: 13px;
+    font-family: 'Poppins',
+    sans-serif;
+    justify-content:space-evenly
+}
+.about-text p{
+    font-size: 13px;
+    font-family: 'Poppins',
+    sans-serif;
+    justify-content:space-evenly
 }
 }
 @media screen and (max-width: 770px) {
-
+    #resume {
+        font-size: 13px;
+        font-family: sans-serif;
+        justify-content:space-evenly;
+        flex-basis: 100%;
+    }
     .footer-left,
     .footer-right {
         flex-basis: 100%;
-        font-size: 14px;
+        text-align: center;
     }
 }
