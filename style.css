@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 #profile{
-    background-image: linear-gradient(rgba(0,0,0,0.4),#009688),url(image/6.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4),#009688),url(images/6.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
