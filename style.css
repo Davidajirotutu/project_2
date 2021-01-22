@@ -301,9 +301,14 @@ nav ul li a{
     background-color: #fff;
 }
 
+.experience h3{
+    margin-bottom: 10px;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
+    padding: 10px;
 }
 
 .flex-container>div {
