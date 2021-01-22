@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 #profile{
-    background-image: linear-gradient(rgba(0,0,0,0.4),#009688),url(6.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4),#009688),url(image/6.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -69,7 +69,7 @@
     width:250px;
     height:100vh;
     position:fixed;
-    right:-250px;
+    right:0px;
     top:0;
     background: #009688;
     z-index: 2;
@@ -242,7 +242,7 @@ nav ul li a{
 #projects p {
     font-weight: 600;
     font-size: 15px;
-    color: #009688;
+    color:#009688;
 }
 
 .title-text p {
@@ -429,4 +429,7 @@ nav ul li a{
         flex-basis: 100%;
         text-align: center;
     }
+    
 }
+
+
