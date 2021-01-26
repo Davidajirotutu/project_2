@@ -7,7 +7,7 @@ var menuBtn = document.getElementById("menu");
 
 sideNav.style.right = "-250px";
 
-menuBtn.onclick = function () {
+sideNav.onclick = function () {
     if(sideNav.style.right === "-250px"){
         sideNav.style.right = "0";
         menu.src = "close.png";
